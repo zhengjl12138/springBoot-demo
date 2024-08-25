@@ -1,0 +1,61 @@
+package com.test.entry;
+import java.util.Date;
+
+public class User {
+
+	private Integer id;
+	
+	private String userName;
+	private String realname;
+	private String phone;
+	private String email;
+	private String grants;
+	private String remark;
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getRealname() {
+		return realname;
+	}
+	public void setRealname(String realname) {
+		this.realname = realname;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getGrants() {
+		return grants;
+	}
+	public void setGrants(String grants) {
+		this.grants = grants;
+	}
+	public String getRemark() {
+		return remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	
+	
+}
+
+

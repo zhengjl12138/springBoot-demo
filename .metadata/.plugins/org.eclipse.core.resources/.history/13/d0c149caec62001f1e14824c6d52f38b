@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table border="1" style="width: 100%">
+	<tr>
+		<td colspan="7">
+			<button type="button" onclick="addUser()">添加</button>
+		</td>
+	</tr>
+	<tr>
+		<td>序列</td>
+		<td>用户ID</td>
+		<td>用户名称</td>
+		<td>登录名称</td>
+		<td>登录密码</td>
+	</tr>
+	<tr th:each="obj,objStat:${userList}">
+		<td th:text="${objStat.index + 1}"></td>
+		<td th:text="${obj.id}"></td>
+		<td th:text="${obj.username}">Onions</td>
+		<td th:text="${obj.realname}"></td>
+		<td th:text="${obj.email}"></td>
+	</tr>
+	
+</table>
+</body>
+</html>
